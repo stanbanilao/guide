@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>iThynk CRM · Thynkverse guides</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#111215;--panel:#17181b;--line:#2c2d32;--ink:#f3f1ee;--muted:#a3a0a6;--or:#ff7417}
+*,*::before,*::after{box-sizing:inherit}
+html,body{height:100%}
+body{margin:0;background:radial-gradient(900px 520px at 10% -5%,rgba(255,116,23,.13),transparent 60%),var(--bg);color:var(--ink);font-family:"Outfit",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1100px;margin:0 auto;padding:28px 24px 48px;min-height:100%;display:flex;flex-direction:column}
+.top{display:flex;align-items:center;gap:10px}
+.back{display:inline-flex;align-items:center;gap:6px;color:var(--muted);text-decoration:none;font-weight:600;font-size:15px;padding:8px 12px 8px 8px;border-radius:999px;border:1px solid var(--line)}
+.back:hover{color:var(--ink);border-color:var(--or)}
+.back:focus-visible,.card:focus-visible{outline:2px solid var(--or);outline-offset:3px}
+.back svg{width:16px;height:16px}
+main{flex:1;padding:56px 0}
+.lg{font-weight:800;letter-spacing:-.045em;font-size:clamp(52px,9vw,96px);display:inline-flex;align-items:center;gap:14px;line-height:1}
+.lg .o{color:var(--or)}
+.crm{font-size:.2em;letter-spacing:.22em;border:2px solid var(--or);border-radius:10px;padding:.3em .55em;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin-top:40px}
+.card{position:relative;display:grid;grid-template-columns:56px 1fr;gap:16px;align-items:start;text-decoration:none;color:inherit;border:1px solid var(--line);background:var(--panel);border-radius:18px;padding:22px;min-height:150px;transition:border-color .25s,transform .25s}
+a.card:hover{border-color:var(--or);transform:translateY(-2px)}
+.ic{width:56px;height:56px;border-radius:14px;border:1px solid #3a2a20;background:#211812;color:var(--or);display:grid;place-items:center}
+.ic svg{width:24px;height:24px}
+.card h2{margin:4px 0 6px;font-size:24px;letter-spacing:-.01em}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.play{position:absolute;right:20px;bottom:20px;width:42px;height:42px;border-radius:50%;background:var(--or);color:#170800;display:grid;place-items:center}
+.play svg{width:16px;height:16px;margin-left:2px}
+.soon{opacity:.5}
+.soon .ic{filter:grayscale(1)}
+.tag{display:inline-block;margin-top:2px;font-size:12px;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:3px 9px}
+footer{color:#6f6c72;font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a class="back" href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 5l-7 7 7 7"/></svg>Guides</a></div>
+  <main>
+    <span class="lg"><span><span class="o">i</span>Th<span class="o">y</span>nk</span><span class="crm">CRM</span></span>
+    <div class="grid">
+      <a class="card" href="/sales">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 17l6-6 4 4 7-7"/><path d="M14 8h6v6"/></svg></span>
+        <div><h2>Sales</h2><p>6 min</p></div>
+        <span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z" fill="currentColor"/></svg></span>
+      </a>
+      <div class="card soon">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h4"/></svg></span>
+        <div><h2>Payments</h2><span class="tag">Coming soon</span></div>
+      </div>
+      <div class="card soon">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3l7 4v5c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V7z"/><path d="M9 12l2 2 4-4"/></svg></span>
+        <div><h2>Supervisor</h2><span class="tag">Coming soon</span></div>
+      </div>
+      <a class="card" href="/company-admin">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="9" cy="8" r="3.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M17 8h4M19 6v4"/></svg></span>
+        <div><h2>Company Admin</h2><p>5 min</p></div>
+        <span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z" fill="currentColor"/></svg></span>
+      </a>
+    </div>
+  </main>
+  <footer>Powered &amp; designed by Thynkverse</footer>
+</div>
+</body>
+</html>
